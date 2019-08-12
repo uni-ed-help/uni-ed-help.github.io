@@ -34,3 +34,10 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+table, td, tr {
+align-right: auto;
+  align-left: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
