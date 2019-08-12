@@ -35,9 +35,17 @@ html {
   background-attachment: fixed;
 }
 
-table, td, tr {
-align-right: auto;
-  align-left: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+.bio_names p {
+  text-align: left;
+    align-items: center;
+    font-size: 12px;
+    
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
