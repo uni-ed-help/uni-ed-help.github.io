@@ -4,10 +4,6 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-body {
-  margin: 0;
-}
-
 .hero h1 {
   /* Text styles */
   font-size: 5em;
