@@ -1,25 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap);
-
-h1 {
-  margin: 0;
-  font-size: 3rem;
-  white-space: nowrap;
-}
-
-header {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-body {
-  font-family: 'Darker Grotesque', sans-serif;
-}
-
 /* Dropdown Button */
 .dropbtn {
-  background-color: rgb(221, 160, 221);
+  background-color: #cbb3e6;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -28,6 +9,8 @@ body {
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+  width: 100%;
+  background-color: #cbb3e6;
   position: relative;
   display: inline-block;
 }

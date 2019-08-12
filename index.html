@@ -3,10 +3,42 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javacript/script.js"></script>
+    <link rel="stylesheet" href="css/dropdown.css">
+    <script src="javacript/dropdown.js"></script>
     <title>Home | Uni(ED)Help</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <style>
+      .hero {
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+
+        /* Flexbox stuff */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Text styles */
+        text-align: center;
+        color: white;
+
+        /* Background styles */
+        background-image: url("images/husky.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .hero h1 {
+        /* Text styles */
+        font-size: 5em;
+
+        /* Margins */
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
     </style>
   </head>
 
@@ -22,13 +54,15 @@
     </div>
 
     <br>
-    <header style="">
-      <h1 style="text-align: center; font-size:64px; text-transform: uppercase;">Uni(ED)Help</h1>
-      <h1 style="text-align: center; font-size:32px">the ultimate academic guide for teens</h1>
-    </header>
-
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>UNI(ED)HELP</h1>
+        <h2>the ultimate academic guide for teens</h2>
+      </div>
+    </section>
 
     <br>
+
     <div>
       <h2 id = "ourteam" > Our Team </h2>
     </div>
@@ -48,6 +82,7 @@
           </div>
         </td>
 
-    <div style="position: absolute; bottom: 0%; left: 50%; transform: translate(-50%, -50%); text-align:center; color:white;">Copyright © 2019 Uni(ED)Help, Inc.</div>
+<!--    <div style="position: absolute; left: 50%; transform: translate(-50%, -50%); text-align:center; color:white;">Copyright © 2019 Uni(ED)Help, Inc.</div>
+-->
   </body>
 </html>
