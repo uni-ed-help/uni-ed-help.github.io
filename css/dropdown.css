@@ -1,6 +1,6 @@
 /* Dropdown Button */
 .dropbtn {
-  background-color: #cbb3e6;
+  background-color: rgba(221, 160, 221, 3);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -10,7 +10,7 @@
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   width: 100%;
-  background-color: #cbb3e6;
+  background-color: #e0e0e0;
   position: relative;
   display: inline-block;
 }
@@ -34,17 +34,16 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: GAINSBORO;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: rgb(0, 0, 0);}
 
 
 /* Add an active class to highlight the current page */
 .dropdown a.active {
-  background-color: rgb(0,0,0);
-  color: white;
+  background-color: #bdbcbb;
+  color: black;
 }
