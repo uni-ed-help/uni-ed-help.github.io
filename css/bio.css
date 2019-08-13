@@ -17,8 +17,8 @@
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: rgb(224, 224, 224);
+  color: black;
+  background-color: #bdbcbb;
   text-align: center;
   cursor: pointer;
   width: 100%;
