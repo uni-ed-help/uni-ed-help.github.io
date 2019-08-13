@@ -3,7 +3,8 @@
   max-width: 500px;
   margin: auto;
   text-align: center;
-  font-family: arial;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .title {
