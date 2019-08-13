@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Resume | Uni(ED) Help
-        </title>
-        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
-    </head>
-    <body>
+    <link rel="stylesheet" href="css/dropdown.css">
+    <title>Resume | Uni(ED) Help</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  </head>
+  <body>
+    <div class="dropdown" style="font-size:18px">
+      <button class="dropbtn">&#9776;</button>
+      <div class="dropdown-content">
+        <a href="index.html" class="active">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="resume.html">Resume Builder</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </div>
         <form action = "resume.py" method = "get" id = "form">
             Name: <input type = "text" name = "name">
             <br/>
