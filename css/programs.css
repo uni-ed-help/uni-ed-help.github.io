@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap);
+
 .card{
   margin-left: auto;
   margin-right: auto;
@@ -6,11 +7,13 @@
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: bold;
 }
+
 .card-title{
   flex: auto;
   padding: 1.25rem;
   font-size: 25px;
 }
+
 .card-text{
   font-size: 20px;
   font-weight: 500;
