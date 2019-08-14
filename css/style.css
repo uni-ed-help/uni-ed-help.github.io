@@ -6,7 +6,7 @@ html {
 
 .hero h1 {
   /* Text styles */
-  font-size: 5em;
+  font-size: 4.5em;
 
   /* Margins */
   margin-top: 0;
@@ -51,4 +51,3 @@ table, td, tr {
   padding-left: 2.5%;
   padding-right: 2.5%;
 }
-    
