@@ -18,10 +18,16 @@ html {
   outline:none;
   width: 50%;
   border-radius: 20px;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
 }
 .buttonpadding:hover{
   background:#fff;
   color:#b3a4ca;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
 }
 .buttonpadding:before,.buttonpadding:after{
   content:'';
@@ -32,16 +38,25 @@ html {
   width:0;
   background: #b3a4ca;
   transition:400ms ease all;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
 }
 .buttonpadding:after{
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
 }
 .buttonpadding:hover:before,.buttonpadding:hover:after{
   width:100%;
   transition:800ms ease all;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
 }
 
 .tableformat {
@@ -111,28 +126,64 @@ h5 {
 }
 
 .btn {
-  display: inline-block;
-  background-color: ghostwhite;
-  padding: .375rem .75rem;
-  line-height: 1.5;
-  border-radius: .5rem;
-  width: 45%;
-  align: center;
+  text-align: center;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+  background:#b3a4ca;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:20px;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  width: 50%;
+  border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 30px;
-  border: 5px, black;
+}
+.btn:hover{
+  background:#fff;
+  color:#b3a4ca;
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: thick;
   font-size: 20px;
 }
-.btn:hover{
-  background-color:#b3a4ca;
-  color:white;
+.btn:before,.btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #b3a4ca;
+  transition:400ms ease all;
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: thick;
+  font-size: 20px;
 }
+.btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+}
+.btn:hover:before,.btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+}
+
 tr, th, table {
   padding-top: 10px;
   padding-bottom: 10px;
