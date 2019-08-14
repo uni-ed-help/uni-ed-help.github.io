@@ -110,6 +110,61 @@
             City: <input type = "text" name = "hscity">
             <br>
             <br>
+            State:
+            <select name = "hs-state">
+                <option class = "state" value = "AL"> AL</option>
+                <option class = "state" value = "AK"> AK</option>
+                <option class = "state" value = "AR"> AR</option>
+                <option class = "state" value = "AZ"> AZ</option>
+                <option class = "state" value = "CA"> CA</option>
+                <option class = "state" value = "CO"> CO</option>
+                <option class = "state" value = "CT"> CT</option>
+                <option class = "state" value = "DE"> DE</option>
+                <option class = "state" value = "FL"> FL</option>
+                <option class = "state" value = "GA"> GA</option>
+                <option class = "state" value = "HI"> HI</option>
+                <option class = "state" value = "ID"> ID</option>
+                <option class = "state" value = "IL"> IL</option>
+                <option class = "state" value = "IN"> IN</option>
+                <option class = "state" value = "IA"> IA</option>
+                <option class = "state" value = "KS"> KS</option>
+                <option class = "state" value = "KY"> KY</option>
+                <option class = "state" value = "LA"> LA</option>
+                <option class = "state" value = "MA"> MA</option>
+                <option class = "state" value = "MD"> MD</option>
+                <option class = "state" value = "ME"> ME</option>
+                <option class = "state" value = "MI"> MI</option>
+                <option class = "state" value = "MN"> MN</option>
+                <option class = "state" value = "MO"> MO</option>
+                <option class = "state" value = "MS"> MS</option>
+                <option class = "state" value = "MT"> MT</option>
+                <option class = "state" value = "NC"> NC</option>
+                <option class = "state" value = "ND"> ND</option>
+                <option class = "state" value = "NE"> NE</option>
+                <option class = "state" value = "NH"> NH</option>
+                <option class = "state" value = "NJ"> NJ</option>
+                <option class = "state" value = "NM"> NM</option>
+                <option class = "state" value = "NV"> NV</option>
+                <option class = "state" value = "NY"> NY</option>
+                <option class = "state" value = "OH"> OH</option>
+                <option class = "state" value = "OK"> OK</option>
+                <option class = "state" value = "OT"> OR</option>
+                <option class = "state" value = "PA"> PA</option>
+                <option class = "state" value = "RI"> RI</option>
+                <option class = "state" value = "SC"> SC</option>
+                <option class = "state" value = "SD"> SD</option>
+                <option class = "state" value = "TN"> TN</option>
+                <option class = "state" value = "TX"> TX</option>
+                <option class = "state" value = "UT"> UT</option>
+                <option class = "state" value = "VA"> VA</option>
+                <option class = "state" value = "VT"> VT</option>
+                <option class = "state" value = "WA"> WA</option>
+                <option class = "state" value = "WI"> WI</option>
+                <option class = "state" value = "WV"> WV</option>
+                <option class = "state" value = "WY"> WY</option>
+            </select>
+            <br>
+            <br>
             GPA: <input type = "text" name = "gpa"> 
             <br>
             <br>
@@ -136,7 +191,13 @@
                 <span class="close">&times;</span>
                 Name of the Extracurricular Activity: <input type = "text" name = "extracurricular">
                 <br>
-                Role: <input type = "text" name = "extact-role">
+                Role: 
+                <div id="EXTACTROLE" class="extactrole">
+                    <input type="text" id="roleinput" placeholder="Title...">
+                    <span onclick="newRole()">Add</span>
+                </div>
+                <ul id="extact-role" name = "extact-role">
+                </ul>
                 <br>
                 Details: 
                 <div id="EXTACTDETAIL" class="extactdetail">
