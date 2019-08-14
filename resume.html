@@ -25,8 +25,8 @@
         <br>
         <br>
         <h1 class = "header"> Resume Builder </h1>
+        <h2 class = "header">General Information</h2>
         <div class = "geninfo">
-            <h2 class = "header">General Information</h2>
             Name: <input type = "text" name = "name">
             <br/>
             <br/>
@@ -101,8 +101,8 @@
         </div>
         <br>
         <br>
+        <h2 class = "header"> Education </h2>
         <div class = "education">
-            <h2 class = "header"> Education </h2>
             High School: <input type="text" name = "highschool">
             <br>
             <br>
@@ -130,14 +130,21 @@
             </ul>
         </div>
         <button id="add-extact">Add Extracurricular Activity</button>
+        <h2 class = "header"> Extracurricular Activities </h2>
         <div id="extracurricular" class="extracurricular">
-            <h2 class = "header"> Extracurricular Activities </h2>
             <div class="extracurricularform">
                 <span class="close">&times;</span>
                 Name of the Extracurricular Activity: <input type = "text" name = "extracurricular">
                 <br>
                 Role: <input type = "text" name = "extact-role">
                 <br>
+                Details: 
+                <div id="EXTACTDETAIL" class="extactdetail">
+                    <input type="text" id="detailinput" placeholder="Title...">
+                    <span onclick="newDetail()">Add</span>
+                </div>
+                <ul id="extact-detail" name = "extact-detail">
+                </ul>
                 Start Date: 
                 <select name = "extact-startmonth">
                     <option class = "month" value = "January">January</option>
