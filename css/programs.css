@@ -21,6 +21,7 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: thick;
   font-size: 20px;
+  position: relative;
 }
 .buttonpadding:hover{
   background:#fff;
