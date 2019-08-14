@@ -3,17 +3,16 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-h1.{
-  padding-left: 10%;
+h1 {
+  text-align: center;
   font-size: 60px;
 }
 
 body {
-  background-color: #e0e0e0;
+  background-color: #fff9ff;
 }
 
 h2.header {
-  text-align: center;
   font-style: normal;
   font-weight: bold;
   display: block;
@@ -23,4 +22,15 @@ h2.header {
 
 .geninfo {
   border-radius: 40%;
+  padding-left:5%;
+}
+
+.extracurricular {
+  border-radius: 40%;
+  padding-left:5%;
+}
+
+.education {
+  border-radius: 40%;
+  padding-left:5%;
 }
