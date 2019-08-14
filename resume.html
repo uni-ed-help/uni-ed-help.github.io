@@ -36,7 +36,7 @@
             <br>
             <br>
             State:
-            <select name = >
+            <select name = "address-state">
                 <option class = "state" value = "AL"> AL</option>
                 <option class = "state" value = "AK"> AK</option>
                 <option class = "state" value = "AR"> AR</option>
@@ -105,7 +105,7 @@
             High School: <input type="text" name = "highschool">
             <br>
             <br>
-            Graduating Year: <input type = "number" max = "3000" min = "2000" step = "1" value = "2020">
+            Graduating Year: <input name = "grad-year" type = "number" max = "3000" min = "2000" step = "1" value = "2020">
             City: <input type = "text" name = "hscity">
             <br>
             <br>
@@ -113,7 +113,7 @@
             <br>
             <br>
             GPA scale: 
-            <select>
+            <select name = "gpascale">
                 <option class = "gpa" value = "4.0"> 4.0 </option>
                 <option class = "gpa" value = "100"> 100 </option>
             </select>
@@ -125,7 +125,7 @@
               <input type="text" id="classinput" placeholder="Title...">
               <span onclick="newClass()">Add</span>
             </div>
-            <ul id="classlist">
+            <ul id="classlist" name = "classlist">
             </ul>
         </div>
         <button id="add-extact">Add Extracurricular Activity</button>
@@ -138,7 +138,7 @@
                 Role: <input type = "text" name = "extact-role">
                 <br>
                 Start Date: 
-                <select>
+                <select name = "extact-startmonth">
                     <option class = "month" value = "January">January</option>
                     <option class = "month" value = "February">February</option>
                     <option class = "month" value = "March">March</option>
@@ -152,8 +152,25 @@
                     <option class = "month" value = "November">November</option>
                     <option class = "month" value = "December">December</option>
                 </select>
-                <input type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                <input name = "extact-startyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
                 End Date: 
+                <input type="checkbox" name="present" value="Present"> Present OR
+                <select name = "extact-endmonth">
+                    <option class = "month" value = "January">January</option>
+                    <option class = "month" value = "February">February</option>
+                    <option class = "month" value = "March">March</option>
+                    <option class = "month" value = "April">April</option>
+                    <option class = "month" value = "May">May</option>
+                    <option class = "month" value = "June">June</option>
+                    <option class = "month" value = "July">July</option>
+                    <option class = "month" value = "August">August</option>
+                    <option class = "month" value = "September">September</option>
+                    <option class = "month" value = "October">October</option>
+                    <option class = "month" value = "November">November</option>
+                    <option class = "month" value = "December">December</option>
+                </select>
+                <input name = "extact-endyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                
             </div>
         </div>
         
