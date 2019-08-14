@@ -8,10 +8,14 @@ body {
 }
 
 h1 .header {
-  font-style: oblique;
+  font-style: normal;
+  font-weight: bold;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  width: 50%;
+  border: 2px white;
+  padding: 10px
+    
 }
 
 .geninfo {
