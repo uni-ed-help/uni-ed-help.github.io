@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="css/dropdown.css">
-    <title>Resume | Uni(ED) Help</title>
-    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
-<<<<<<< HEAD
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/resume.css">
+        <script src="javascript/resume.js">
+        <title>Resume | Uni(ED) Help</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     </head>
     <body>
         <div class="dropdown" style="font-size:18px">
@@ -23,28 +24,6 @@
         <br>
         <br>
         <br>
-=======
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-  </head>
-   <body>
-    <div class="dropdown" style="font-size:18px">
-      <button class="dropbtn">&#9776;</button>
-      <div class="dropdown-content">
-        <a href="index.html" class="active">Home</a>
-        <a href="programs.html">Programs</a>
-        <a href="resume.html">Resume Builder</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </div>
-        &nbsp;&nbsp;Uni(ED)Help
-        <img src="images/logo.jpg" style="float:right;height:54px">
-    </div>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
->>>>>>> aac14d58b2d265b7cf0b18332be9b6da9fc6964f
         <form action = "resume.py" method = "get" id = "form">
             Name: <input type = "text" name = "name">
             <br/>
@@ -119,10 +98,90 @@
             Email: <input type = "email" name = "email">
             <br>
             <br>
-            High School: <input type="text"  name = "highschool">
+            High School: <input type="text" name = "highschool">
+            <br>
+            <br>
+            Graduating Year: <input type = "number" max = "3000" min = "2000" step = "1" value = "2020">
+            City: <input type = "text" name = "hscity">
+            <br>
+            <br>
+            GPA: <input type = "text" name = "gpa"> 
+            <br>
+            <br>
+            GPA scale: 
+            <select>
+                <option class = "gpa" value = "4.0"> 4.0 </option>
+                <option class = "gpa" value = "100"> 100 </option>
+            </select>
+            <br>
+            <br>
+            Related Coursework: 
             
-            <br>
-            <br>
+            <div id="myDIV" class="header">
+              <input type="text" id="myInput" placeholder="Title...">
+              <span onclick="newClass()">Add</span>
+            </div>
+            <ul id="myUL">
+            </ul>
+
+            <script>
+            // Create a "close" button and append it to each list item
+            var myNodelist = document.getElementsByTagName("LI");
+            var i;
+            for (i = 0; i < myNodelist.length; i++) {
+              var span = document.createElement("SPAN");
+              var txt = document.createTextNode("\u00D7");
+              span.className = "close";
+              span.appendChild(txt);
+              myNodelist[i].appendChild(span);
+            }
+
+            // Click on a close button to hide the current list item
+            var close = document.getElementsByClassName("close");
+            var i;
+            for (i = 0; i < close.length; i++) {
+              close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+              }
+            }
+
+            // Add a "checked" symbol when clicking on a list item
+            var list = document.querySelector('ul');
+            list.addEventListener('click', function(ev) {
+              if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('checked');
+              }
+            }, false);
+
+            // Create a new list item when clicking on the "Add" button
+            function newClass() {
+              var li = document.createElement("li");
+              var inputValue = document.getElementById("myInput").value;
+              var t = document.createTextNode(inputValue);
+              li.appendChild(t);
+              if (inputValue === '') {
+                alert("You must write something!");
+              } else {
+                document.getElementById("myUL").appendChild(li);
+              }
+              document.getElementById("myInput").value = "";
+
+              var span = document.createElement("SPAN");
+              var txt = document.createTextNode("\u00D7");
+              span.className = "close";
+              span.appendChild(txt);
+              li.appendChild(span);
+
+              for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                  var div = this.parentElement;
+                  div.style.display = "none";
+                }
+              }
+            }
+            </script>
+            
             <input class = "submit" type = "submit" value = "see your resume!" name = "pushit">
         </form>
     </body>
