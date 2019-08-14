@@ -3,21 +3,34 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-body {
-  background-color: #bdbcbb
+h1 {
+  text-align: center;
+  font-size: 60px;
 }
 
-h1 .header {
+body {
+  background-color: #e0e0e0;
+}
+
+h2.header {
   font-style: normal;
   font-weight: bold;
   display: block;
   margin: auto;
-  width: 50%;
   border: 2px white;
-  padding: 10px
-    
 }
 
 .geninfo {
-  font-size: 40%;
-  border-radius: 20%
+  border-radius: 40%;
+  padding-left:5%;
+}
+
+.extracurricular {
+  border-radius: 40%;
+  padding-left:5%;
+}
+
+.education {
+  border-radius: 40%;
+  padding-left:5%;
+}

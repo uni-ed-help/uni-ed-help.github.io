@@ -12,7 +12,7 @@
             <button class="dropbtn">&#9776;</button>
             <div class="dropdown-content">
                 <a href="index.html" class="active">Home</a>
-                <a href="programsmenu.html">Programs</a>
+                <a href="programs.html">Programs</a>
                 <a href="resume.html">Resume Builder</a>
                 <a href="faq.html">FAQ</a>
                 <a href="contact.html">Contact</a>
@@ -24,8 +24,9 @@
         <br>
         <br>
         <br>
+        <h1 class = "header"> Resume Builder </h1>
+        <h2 class = "header">General Information</h2>
         <div class = "geninfo">
-            <h1 class = "header">General Information</h1>
             Name: <input type = "text" name = "name">
             <br/>
             <br/>
@@ -36,7 +37,7 @@
             <br>
             <br>
             State:
-            <select name = >
+            <select name = "address-state">
                 <option class = "state" value = "AL"> AL</option>
                 <option class = "state" value = "AK"> AK</option>
                 <option class = "state" value = "AR"> AR</option>
@@ -100,12 +101,12 @@
         </div>
         <br>
         <br>
+        <h2 class = "header"> Education </h2>
         <div class = "education">
-            <h1 class = "header"> Education </h1>
             High School: <input type="text" name = "highschool">
             <br>
             <br>
-            Graduating Year: <input type = "number" max = "3000" min = "2000" step = "1" value = "2020">
+            Graduating Year: <input name = "grad-year" type = "number" max = "3000" min = "2000" step = "1" value = "2020">
             City: <input type = "text" name = "hscity">
             <br>
             <br>
@@ -113,7 +114,7 @@
             <br>
             <br>
             GPA scale:
-            <select>
+            <select name = "gpascale">
                 <option class = "gpa" value = "4.0"> 4.0 </option>
                 <option class = "gpa" value = "100"> 100 </option>
             </select>
@@ -125,35 +126,62 @@
               <input type="text" id="classinput" placeholder="Title...">
               <span onclick="newClass()">Add</span>
             </div>
-            <ul id="classlist">
+            <ul id="classlist" name = "classlist">
             </ul>
         </div>
-        <button id="add-extact">Add Extracurricular Activity</button>
+        <br>
+        <br>
+        <h2 class = "header"> Extracurricular Activities </h2>
         <div id="extracurricular" class="extracurricular">
-            <h1 class = "header"> Extracurricular Activities </h1>
             <div class="extracurricularform">
-                <span class="close">&times;</span>
-                Name of the Extracurricular Activity: <input type = "text" name = "extracurricular">
-                <br>
-                Role: <input type = "text" name = "extact-role">
-                <br>
-                Start Date:
-                <select>
-                    <option class = "month" value = "January">January</option>
-                    <option class = "month" value = "February">February</option>
-                    <option class = "month" value = "March">March</option>
-                    <option class = "month" value = "April">April</option>
-                    <option class = "month" value = "May">May</option>
-                    <option class = "month" value = "June">June</option>
-                    <option class = "month" value = "July">July</option>
-                    <option class = "month" value = "August">August</option>
-                    <option class = "month" value = "September">September</option>
-                    <option class = "month" value = "October">October</option>
-                    <option class = "month" value = "November">November</option>
-                    <option class = "month" value = "December">December</option>
-                </select>
-                <input type = "number" max = "3000" min = "2000" step = "1" value = "2019">
-                End Date:
+
+              <span class="close">&times;</span>
+              Name of the Extracurricular Activity: <input type = "text" name = "extracurricular">
+              <br>
+              Role: <input type = "text" name = "extact-role">
+              <br>
+              Details:
+              <div id="EXTACTDETAIL" class="extactdetail">
+                <input type="text" id="detailinput" placeholder="Title...">
+                <span onclick="newDetail()">Add</span>
+              </div>
+              <ul id="extact-detail" name = "extact-detail">
+              </ul>
+              Start Date:
+              <select name = "extact-startmonth">
+                <option class = "month" value = "January">January</option>
+                <option class = "month" value = "February">February</option>
+                <option class = "month" value = "March">March</option>
+                <option class = "month" value = "April">April</option>
+                <option class = "month" value = "May">May</option>
+                <option class = "month" value = "June">June</option>
+                <option class = "month" value = "July">July</option>
+                <option class = "month" value = "August">August</option>
+                <option class = "month" value = "September">September</option>
+                <option class = "month" value = "October">October</option>
+                <option class = "month" value = "November">November</option>
+                <option class = "month" value = "December">December</option>
+              </select>
+              <input name = "extact-startyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+              End Date:
+              <input type="checkbox" name="present" value="Present"> Present OR
+              <select name = "extact-endmonth">
+                <option class = "month" value = "January">January</option>
+                <option class = "month" value = "February">February</option>
+                <option class = "month" value = "March">March</option>
+                <option class = "month" value = "April">April</option>
+                <option class = "month" value = "May">May</option>
+                <option class = "month" value = "June">June</option>
+                <option class = "month" value = "July">July</option>
+                <option class = "month" value = "August">August</option>
+                <option class = "month" value = "September">September</option>
+                <option class = "month" value = "October">October</option>
+                <option class = "month" value = "November">November</option>
+                <option class = "month" value = "December">December</option>
+              </select>
+              <input name = "extact-endyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+              <br>
+              <button id="add-extact">Add Extracurricular Activity</button>
             </div>
         </div>
 
