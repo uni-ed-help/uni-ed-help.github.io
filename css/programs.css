@@ -43,7 +43,6 @@ html {
   font-size: 30px;
 }
 .cardbody{
-  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
