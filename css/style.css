@@ -4,6 +4,10 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 .hero h1 {
   /* Text styles */
   font-size: 4.5em;
@@ -36,6 +40,7 @@ html {
 }
 
 .card {
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
