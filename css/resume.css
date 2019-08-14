@@ -3,7 +3,27 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-h1 {
-  text-align: center;
+h1.{
+  padding-left: 5%;
   font-size: 60px;
+}
+
+body {
+  background-color: #bdbcbb;
+}
+
+h2.header {
+  font-style: normal;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  width: 50%;
+  border: 2px white;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.geninfo {
+  font-size: 40%;
+  border-radius: 20%;
 }
