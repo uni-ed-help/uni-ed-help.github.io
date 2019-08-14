@@ -4,7 +4,7 @@ html {
 }
 
 h1.{
-  padding-left: 5%;
+  padding-left: 10%;
   font-size: 60px;
 }
 
@@ -13,13 +13,12 @@ body {
 }
 
 h2.header {
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   display: block;
   margin: auto;
-  width: 50%;
   border: 2px white;
-  padding: 10px;
   font-family: sans-serif;
 }
 
