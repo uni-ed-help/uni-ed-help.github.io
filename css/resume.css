@@ -34,3 +34,8 @@ h2.header {
   border-radius: 40%;
   padding-left:5%;
 }
+
+input {
+  width: 100%;
+}
+
