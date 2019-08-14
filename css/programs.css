@@ -4,6 +4,12 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
+.tableformat {
+  width:50%;
+  vertical-align: top;
+}
+
+
 .card{
   margin-left: auto;
   margin-right: auto;
