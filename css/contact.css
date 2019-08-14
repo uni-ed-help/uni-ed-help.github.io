@@ -5,9 +5,14 @@ html {
 
 h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 80px;
 }
 
 body {
   background-color: #fff9ff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
 }
