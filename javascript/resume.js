@@ -24,7 +24,9 @@ list.addEventListener('click', function(ev) {
     }
 }, false);
 
-function newClass() {
+function newform(list_type) {
+    if list_type == "class":
+        inputValue = 
     var li = document.createElement("li");
     var inputValue = document.getElementById("classinput").value;
     var t = document.createTextNode(inputValue);
