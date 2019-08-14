@@ -6,6 +6,42 @@ html {
 
 .buttonpadding {
   text-align: center;
+  background:#b3a4ca;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:20px;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  width: 50%;
+  border-radius: 20px;
+}
+.buttonpadding:hover{
+  background:#fff;
+  color:#b3a4ca;
+}
+.buttonpadding:before,.buttonpadding:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #b3a4ca;
+  transition:400ms ease all;
+}
+.buttonpadding:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.buttonpadding:hover:before,.buttonpadding:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
 .tableformat {
