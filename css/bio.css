@@ -1,14 +1,23 @@
+
+#id {
+  font-size: 40%;
+}
+
+.tdalign {
+  vertical-align: top;
+}
+
 .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 300px;
-        margin: auto;
-        text-align: center;
-        font-family: arial;
-      }
+  box-shadow: 0 4px 11px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding-right: 5%;
+  padding-left: 5%;
+}
 
 .title {
   color: grey;
-  font-size: 18px;
 }
 
 .contactbutton {
@@ -16,15 +25,15 @@
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
+  color: black;
+  background-color: #bdbcbb;
   text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
 }
 
-a {
+.linka {
   text-decoration: none;
   font-size: 22px;
   color: black;
@@ -32,3 +41,9 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
+}
+
+.bottom {
+  padding-left: 50px;
+  padding-right: 50px;
+}
