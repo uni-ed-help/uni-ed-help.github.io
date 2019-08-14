@@ -37,11 +37,11 @@ h2.header {
 
 input {
   width: 30%;
-  border-radius: 15px;
+  border-radius: 95px;
 }
 
 #add-extact {
-  border-radius: 25px;
+  border-radius: 90px;
   background: white;
   padding: 20px;
   width: 200px;
