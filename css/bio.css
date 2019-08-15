@@ -10,12 +10,13 @@
 .card {
   box-shadow: 0 4px 11px 8px rgba(0, 0, 0, 0.2);
   max-width: 500px;
-  margin: auto;
+  margin-top: 5%;
   text-align: center;
   padding-right: 5%;
   padding-left: 5%;
   border: double;
   padding-top: 1%;
+ 
 }
 
 .title {
