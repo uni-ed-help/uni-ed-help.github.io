@@ -4,7 +4,10 @@
 html {
   font-family: 'Darker Grotesque', sans-serif;
 }
-
+.menubackground{
+  background: cover;
+  background-image: url(https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+}
 .buttonpadding {
   text-align: center;
   background:#b3a4ca;
@@ -193,4 +196,5 @@ tr, th, table {
 h1 {
   text-align: center;
   font-size: 60px;
+  color: white;
 }
