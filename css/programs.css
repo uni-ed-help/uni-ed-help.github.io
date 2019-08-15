@@ -103,7 +103,7 @@ html {
 }
 .menubackground{
   background: cover;
-  background-image: url("../images/testpic.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url("../images/testpic.jpg");
 }
 .buttonpadding {
   text-align: center;
