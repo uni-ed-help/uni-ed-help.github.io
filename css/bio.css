@@ -14,6 +14,8 @@
   text-align: center;
   padding-right: 5%;
   padding-left: 5%;
+  border: double;
+  padding-top: 1%;
 }
 
 .title {
