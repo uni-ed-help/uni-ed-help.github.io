@@ -3,17 +3,34 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-h1 {
-  text-align: left;
+h2 {
   font-size: 45px;
+  margin-left: 75px;
+  margin-bottom: : 200px;
 }
+
+p {
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  margin-left: 200px;
+  margin-right: 100px;
+}
+
 
 body {
-  background-color: lavender;
+  background-color: snow;
 }
-
-
-
+ul {
+  font-size: 20px;
+  margin-bottom: 300px;
+  margin-left: 700px;
+}
+img{
+  margin-left: 550px;
+  margin-top: 0px;
+  margin-bottom: 5000px;
+}
 
 
 
