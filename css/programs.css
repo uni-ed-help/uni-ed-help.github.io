@@ -146,7 +146,7 @@ h5 {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 30px;
-  position:absolute;
+  position:relative;
 }
 .btn:hover{
   background:#fff;
