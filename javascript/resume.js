@@ -25,26 +25,55 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 function newform(list_type) {
-    if list_type == "class":
-        inputValue = 
+    var inputValue;
+    var list;
     var li = document.createElement("li");
-    var inputValue = document.getElementById("classinput").value;
+    console.log("after inputValue");
+    if (list_type == "classes") {
+        inputValue = document.getElementById("classinput").value;
+        console.log ("classinputValue" + inputValue)
+        if (inputValue === '') {
+            alert("You must write something!");
+        } 
+        else {
+            list = document.getElementById("classlist");
+            console.log ("list:" + list);
+            list.appendChild(li);
+        }
+    }
+    else if (list_type == "roles") {
+        inputValue = document.getElementById("roleinput").value;
+        console.log ("roleinputValue" + inputValue)
+
+        if (inputValue === '') {
+            alert("You must write something!");
+        } 
+        else {
+            list = document.getElementById("extact-role");
+            console.log ("list:" + list);
+            list.appendChild(li);
+        }
+    }
+    else if (list_type == "details") {
+        inputValue = document.getElementById("detailinput").value;
+        console.log ("inputValue" + inputValue)
+        if (inputValue === '') {
+            alert("You must write something!");
+        } 
+        else {
+            list = document.getElementById("extact-detail");
+            console.log ("list:" + list);
+            list.appendChild(li);
+        }
+    }
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
-    if (inputValue === '') {
-        alert("You must write something!");
-    } 
-    else {
-        document.getElementById("classlist").appendChild(li);
-    }
-    document.getElementById("classinput").value = "";
-
+    inputValue = "";
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
             var div = this.parentElement;
