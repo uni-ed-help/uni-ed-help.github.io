@@ -32,6 +32,8 @@
         <br>
         <h1 class = "header"> Resume Builder </h1>
         <h2 class = "header">General Information</h2>
+        <br>
+        <br>
         <div class = "geninfo">
             Name: <input type = "text" name = "name">
             <br/>
@@ -40,8 +42,6 @@
             <br>
             <br>
             City: <input type = "text" name = "city">
-            <br>
-            <br>
             State:
             <select name = "address-state">
                 <option class = "state" value = "AL"> AL</option>
@@ -97,13 +97,16 @@
             </select>
             <br>
             <br>
+            <div class="zipcodebox">
             Zip Code: <input type = "text" name = "zipcode">
+            </div>
             <br>
-            <br>
+            <div class="phonenumberbox">
             Phone Number: <input type = "tel" name = "phone">
             <br>
             <br>
             Email: <input type = "email" name = "email">
+            </div>
         </div>
         <br>
         <br>
@@ -112,11 +115,12 @@
             High School: <input type="text" name = "highschool">
             <br>
             <br>
-            Start Year: <input name = "hsstart" type = "number" max="3000" min="2000" step = "1" value = "2016">
-            Graduating Year: <input name = "grad-year" type = "number" max = "3000" min = "2000" step = "1" value = "2020">
-            City: <input type = "text" name = "hscity">
+            Start Year: <input name = "hsstart" type = "number" max="3000" min="2000" step = "1" value = "2016" style= "width:20%">
+            Graduating Year: <input name = "grad-year" type = "number" max = "3000" min = "2000" step = "1" value = "2020" style="width:20%">
             <br>
             <br>
+            City: <input type = "text" name = "hscity" style="width:30%">
+            <div class ="statebox">
             State:
             <select name = "hs-state">
                 <option class = "state" value = "AL"> AL</option>
@@ -170,6 +174,7 @@
                 <option class = "state" value = "WV"> WV</option>
                 <option class = "state" value = "WY"> WY</option>
             </select>
+            </div>
             <br>
             <br>
             GPA: <input type = "text" name = "gpa">
