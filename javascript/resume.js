@@ -5,24 +5,25 @@ function addExtra() {
   var list;
   var divbutton = document.createElement("div");
   var button = document.createElement("button");
-  var h3 = document.createElement("h3");
+  var divpanel = document.createElement("div");
+  var p = document.createElement("p");
 
-  if (role === '' || details === '') {
+  if (role === '' || details === '' || name === '') {
     alert("You must write something!");
   }
   else {
+    button.appendChild(document.createTextNode(name));
+    button.classList.add("accordion");
+    p.appendChild(document.createTextNode(role));
+    p.appendChild(document.createTextNode(details));
+    divpanel.appendChild(p);
+    divpanel.classList.add("panel");
+    divbutton.appendChild(button);
+    divbutton.appendChild(divpanel);
     list = document.getElementById("extactlist");
-    list.appendChild(li1);
+    list.appendChild(divbutton);
   }
-  h3.appendChild(document.createTextNode(name));
-  var roletxt = document.createTextNode(role);
-  var detailstxt = document.createTextNode(details);
-  button.appendChild(h3);
-  button.classList.add("accordion");
 
-  li2.appendChild(roletxt);
-  li2.appendChild(detailstxt);
-  divbutton.appendChild(button);
   name = "";
   role = "";
   details = "";
@@ -38,9 +39,6 @@ function addExtra() {
     }
   }
 }
-
-
-
 
 
 var myNodelist = document.getElementsByTagName("LI");

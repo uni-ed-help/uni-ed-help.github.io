@@ -8,7 +8,7 @@ h1 {
 }
 
 body {
-  background-color: #f2f2f2 !important;
+  background-color: #fff9ff !important;
   font-family: 'Darker Grotesque', sans-serif !important;
 }
 
@@ -20,8 +20,6 @@ h2.header {
   border: 2px white !important;
   font-size: 32px !important;
   padding-left: 1% !important;
-  text-decoration: underline;
-  font-weight: lighter;
 }
 
 .geninfo {
@@ -43,34 +41,10 @@ h2.header {
 }
 
 input {
-  width: 65%;
-  height: 50px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  transition: 5s;
-  border: 3px solid #ccc;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none;
-}
-input:focus {
-  border: 3px solid #555;
+  width: 40% !important;
+  border-radius: 95px !important;
 }
 
-.cityboxposition {
-  width: 40%;
-  display: inline-block;
-}
-.zipcodebox {
-  width: 30%;
-}
-.phonenumberbox {
-  width: 60%;
-}
-.statebox {
-  display: inline-block;
-}
 #add-extact {
   border-radius: 90px !important;
   background: #e0e0e0 !important;
@@ -78,42 +52,36 @@ input:focus {
   width: 30% !important;
   height: 4% !important;
 }
-#theResume {
-  width: 70%;
-  margin-left: 150px;
-  height: 800px;
-  margin-bottom: 100px;
-  border: 8px solid #ccc;
-}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: white;
-  cursor: pointer;
-  padding-left: 2.5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+  background-color: white !important;
+  cursor: pointer !important;
+  padding-left: 2.5% !important;
+  padding-top: 1% !important;
+  padding-bottom: 1% !important;
+  width: 50% !important;
+  text-align: left !important;
+  border: none !important;
+  outline: none !important;
+  transition: 0.4s !important;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color:  #e0e0e0;
+  background-color:  #e0e0e0 !important;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  margin: 1%;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-  font-size: 18px;
-  border-radius: 1px;
-  border-style: ridge;
+  padding: 0 18px !important;
+  margin: 1% !important;
+  background-color: white !important;
+  display: none !important;
+  overflow: hidden !important;
+  font-size: 18px !important;
+  border-radius: 1px !important;
+  border-style: ridge !important;
 }
 
 /* The Modal (background) */
