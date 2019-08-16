@@ -191,15 +191,16 @@
             <ul id="classlist" name = "classlist">
             </ul>
         </div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <h2 class = "header"> Extracurricular Activities </h2>
         <!-- Button to Open the Modal -->
         <div style="padding-left:1%">
-          <button style="background-color:#d6d6d6 !important; color:black !important;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          <button style="background-color:#d6d6d6 !important; color:black !important;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#extra">
             Add Extracurricular Activity
           </button>
         </div>
         <!-- The Modal -->
-        <div class="modal" id="myModal">
+        <div class="modal" id="extra">
           <div class="modal-dialog">
             <div class="modal-content">
 
@@ -217,6 +218,85 @@
                   Name of the Extracurricular Activity: <input type = "text" placeholder="Name...">
                   <br>
                   Role: <input type="text" id="roleinput" placeholder="Roles...">
+                  <br>
+                  Details: <br> <textarea style="width:75%; font-size: 20px; border-radius: 10px" id="extact-detailinput" placeholder="Details..."></textarea>
+                    <!-- <span onclick='newform("details")'>Add</span> -->
+                  <!-- <ul id="extact-detail" name = "extact-detail">
+                  </ul> -->
+                  <br>
+                  Start Date:
+                  <select name = "extact-startmonth">
+                    <option class = "month" value = "January">January</option>
+                    <option class = "month" value = "February">February</option>
+                    <option class = "month" value = "March">March</option>
+                    <option class = "month" value = "April">April</option>
+                    <option class = "month" value = "May">May</option>
+                    <option class = "month" value = "June">June</option>
+                    <option class = "month" value = "July">July</option>
+                    <option class = "month" value = "August">August</option>
+                    <option class = "month" value = "September">September</option>
+                    <option class = "month" value = "October">October</option>
+                    <option class = "month" value = "November">November</option>
+                    <option class = "month" value = "December">December</option>
+                  </select>
+                  <input style="width: 20% !important;" name = "extact-startyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                  <br>
+                  End Date:
+                  <input style="width: 5% !important;" type="checkbox" name="present" value="Present"> Present OR
+                  <select style="width: 20% !important;" name = "extact-endmonth">
+                    <option class = "month" value = "January">January</option>
+                    <option class = "month" value = "February">February</option>
+                    <option class = "month" value = "March">March</option>
+                    <option class = "month" value = "April">April</option>
+                    <option class = "month" value = "May">May</option>
+                    <option class = "month" value = "June">June</option>
+                    <option class = "month" value = "July">July</option>
+                    <option class = "month" value = "August">August</option>
+                    <option class = "month" value = "September">September</option>
+                    <option class = "month" value = "October">October</option>
+                    <option class = "month" value = "November">November</option>
+                    <option class = "month" value = "December">December</option>
+                  </select>
+                  <input style="width: 20% !important;" name = "extact-endyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                </form>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn" onclick="addExtra()">Add</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div id="extactlist" name = "extactlist">
+        </div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <h2 class = "header"> Special Programs </h2>
+        <!-- Button to Open the Modal -->
+        <div style="padding-left:1%">
+          <button style="background-color:#d6d6d6 !important; color:black !important;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#prog">
+            Add Special Program
+          </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="prog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Add Special Program</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form action="" method="post">
+
+
+                  Name of the Special Program: <input type = "text" placeholder="Name...">
+                  <br>
+                  Location: <input type="text" id="roleinput" placeholder="Location...">
                   <br>
                   Details: <br> <textarea style="width:75%; font-size: 20px; border-radius: 10px" id="detailinput" placeholder="Details..."></textarea>
                     <!-- <span onclick='newform("details")'>Add</span> -->
@@ -261,7 +341,59 @@
               </div>
               <!-- Modal footer -->
               <div class="modal-footer">
-                <button type="button" class="btn" data-dismiss="modal" onclick="addExtra()">Add</button>
+                <button type="button" class="btn" data-dismiss="modal" onclick="addProg()">Add</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <ul id="extact-extact" name = "extact-extact">
+        </ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <h2 class = "header"> Honors and Awards </h2>
+        <!-- Button to Open the Modal -->
+        <div style="padding-left:1%">
+          <button style="background-color:#d6d6d6 !important; color:black !important;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#honor">
+            Add Honors and Awards
+          </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="honor">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Add Honors and Awards</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form action="" method="post">
+                  Name of the Honor/Award: <input type = "text" placeholder="Name...">
+                  <br>
+                  Date:
+                  <select name = "extact-month">
+                    <option class = "month" value = "January">January</option>
+                    <option class = "month" value = "February">February</option>
+                    <option class = "month" value = "March">March</option>
+                    <option class = "month" value = "April">April</option>
+                    <option class = "month" value = "May">May</option>
+                    <option class = "month" value = "June">June</option>
+                    <option class = "month" value = "July">July</option>
+                    <option class = "month" value = "August">August</option>
+                    <option class = "month" value = "September">September</option>
+                    <option class = "month" value = "October">October</option>
+                    <option class = "month" value = "November">November</option>
+                    <option class = "month" value = "December">December</option>
+                  </select>
+                  <input style="width: 20% !important;" name = "extact-year" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                </form>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal" onclick="addHonor()">Add</button>
               </div>
 
             </div>

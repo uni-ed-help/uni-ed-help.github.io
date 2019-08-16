@@ -1,13 +1,32 @@
 function addExtra() {
-  inputValue = document.getElementById("extactinput").value;
-  console.log ("inputValue" + inputValue)
-  if (inputValue === '') {
-    alert("You must write something!");
+  var role = document.getElementById("roleinput").value;
+  var details = document.getElementById("extact-detailinput").value
+  var list;
+  var button = document.createElement("button");
+      if (role === '' || details === '') {
+        alert("You must write something!");
+      }
+      else {
+        list = document.getElementById("extactlist");
+        list.appendChild(button);
+      }
   }
-  else {
-    list = document.getElementById("extact-extact");
-    console.log ("list:" + list);
-    list.appendChild(li);
+
+  var roletxt = document.createTextNode(role);
+  var detailstxt = document.createTextNode(details);
+  button.appendChild(roletxt);
+  button.appendChild(detailstxt);
+  inputValue = "";
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  button.appendChild(span);
+  for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.display = "none";
+      }
   }
 }
 
