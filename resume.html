@@ -4,6 +4,10 @@
         <link rel="stylesheet" href="css/dropdown.css">
         <link rel="stylesheet" href="css/resume.css">
         <script src="javascript/resume.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <title>Resume | Uni(ED) Help</title>
         <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     </head>
@@ -185,30 +189,38 @@
             <ul id="classlist" name = "classlist">
             </ul>
         </div>
-        <button id="add-extact">Add Extracurricular Activity</button>
         <h2 class = "header"> Extracurricular Activities </h2>
-        <div id="extracurricular" class="extracurricular">
-            <div class="extracurricularform">
-                <span class="close">&times;</span>
-                Name of the Extracurricular Activity: <input type = "text" name = "extracurricular">
-                <br>
-                Role:
-                <div id="EXTACTROLE" class="extactrole">
-                    <input type="text" id="roleinput" placeholder="Title...">
-                    <span onclick='newform("roles")'>Add</span>
-                </div>
-                <ul id="extact-role" name = "extact-role">
-                </ul>
-                <br>
-                Details:
-                <div id="EXTACTDETAIL" class="extactdetail">
-                    <input type="text" id="detailinput" placeholder="Title...">
-                    <span onclick='newform("details")'>Add</span>
-                </div>
-                <ul id="extact-detail" name = "extact-detail">
-                </ul>
-                Start Date:
-                <select name = "extact-startmonth">
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Add Extracurricular Activity
+        </button>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Add Extracurricular Activity</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form action="" method="post">
+
+
+                  Name of the Extracurricular Activity: <input type = "text" placeholder="Name...">
+                  <br>
+                  Role: <input type="text" id="roleinput" placeholder="Roles...">
+                  <br>
+                  Details: <br> <textarea style="font-size: 20px; border-radius: 10px" id="detailinput" placeholder="Details..."></textarea>
+                    <!-- <span onclick='newform("details")'>Add</span> -->
+                  <!-- <ul id="extact-detail" name = "extact-detail">
+                  </ul> -->
+                  <br>
+                  Start Date:
+                  <select name = "extact-startmonth">
                     <option class = "month" value = "January">January</option>
                     <option class = "month" value = "February">February</option>
                     <option class = "month" value = "March">March</option>
@@ -221,11 +233,12 @@
                     <option class = "month" value = "October">October</option>
                     <option class = "month" value = "November">November</option>
                     <option class = "month" value = "December">December</option>
-                </select>
-                <input name = "extact-startyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
-                End Date:
-                <input type="checkbox" name="present" value="Present"> Present OR
-                <select name = "extact-endmonth">
+                  </select>
+                  <input style="width: 20%;" name = "extact-startyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                  <br>
+                  End Date:
+                  <input style="width: 10%;" type="checkbox" name="present" value="Present"> Present OR
+                  <select style="width: 20%;" name = "extact-endmonth">
                     <option class = "month" value = "January">January</option>
                     <option class = "month" value = "February">February</option>
                     <option class = "month" value = "March">March</option>
@@ -238,11 +251,20 @@
                     <option class = "month" value = "October">October</option>
                     <option class = "month" value = "November">November</option>
                     <option class = "month" value = "December">December</option>
-                </select>
-                <input name = "extact-endyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                  </select>
+                  <input style="width: 20%;" name = "extact-endyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                </form>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal" onclick="addExtra()">Add</button>
+              </div>
 
             </div>
+          </div>
         </div>
+        <ul id="extact-extact" name = "extact-extact">
+        </ul>
 
         <input class = "submit" type = "submit" value = "see your resume!" onclick = "makeResume()" name = "pushit">
         <br>

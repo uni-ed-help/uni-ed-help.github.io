@@ -1,3 +1,16 @@
+function addExtra() {
+  inputValue = document.getElementById("extactinput").value;
+  console.log ("inputValue" + inputValue)
+  if (inputValue === '') {
+    alert("You must write something!");
+  }
+  else {
+    list = document.getElementById("extact-extact");
+    console.log ("list:" + list);
+    list.appendChild(li);
+  }
+}
+
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -34,38 +47,26 @@ function newform(list_type) {
         console.log ("classinputValue" + inputValue)
         if (inputValue === '') {
             alert("You must write something!");
-        } 
+        }
         else {
             list = document.getElementById("classlist");
             console.log ("list:" + list);
             list.appendChild(li);
         }
     }
-    else if (list_type == "roles") {
-        inputValue = document.getElementById("roleinput").value;
-        console.log ("roleinputValue" + inputValue)
+    // else if (list_type == "details") {
+    //     inputValue = document.getElementById("detailinput").value;
+    //     console.log ("inputValue" + inputValue)
+    //     if (inputValue === '') {
+    //         alert("You must write something!");
+    //     }
+    //     else {
+    //         list = document.getElementById("extact-detail");
+    //         console.log ("list:" + list);
+    //         list.appendChild(li);
+    //     }
+    // }
 
-        if (inputValue === '') {
-            alert("You must write something!");
-        } 
-        else {
-            list = document.getElementById("extact-role");
-            console.log ("list:" + list);
-            list.appendChild(li);
-        }
-    }
-    else if (list_type == "details") {
-        inputValue = document.getElementById("detailinput").value;
-        console.log ("inputValue" + inputValue)
-        if (inputValue === '') {
-            alert("You must write something!");
-        } 
-        else {
-            list = document.getElementById("extact-detail");
-            console.log ("list:" + list);
-            list.appendChild(li);
-        }
-    }
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     inputValue = "";
@@ -81,4 +82,3 @@ function newform(list_type) {
         }
     }
 }
-
