@@ -1,88 +1,57 @@
 @import url(https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap);
 html {
-  font-family: 'Darker Grotesque', sans-serif;
 }
 
 h1 {
-  text-align: center;
-  font-size: 60px;
+  text-align: center !important;
+  font-size: 60px !important;
 }
 
 body {
-  background-color: #fff9ff;
+  background-color: #fff9ff !important;
+  font-family: 'Darker Grotesque', sans-serif !important;
 }
 
 h2.header {
-  font-style: normal;
-  font-weight: bold;
-  display: block;
-  margin: auto;
-  border: 2px white;
-  font-size: 32px;
-  padding-left: 1%;
+  font-style: normal !important;
+  font-weight: bold !important;
+  display: block !important;
+  margin: auto !important;
+  border: 2px white !important;
+  font-size: 32px !important;
+  padding-left: 1% !important;
 }
 
 .geninfo {
-  font-size: 20px;
-  border-radius: 40%;
-  padding-left:5%;
+  font-size: 20px !important;
+  border-radius: 40% !important;
+  padding-left:5% !important;
 }
 
 .extracurricular {
-  font-size: 20px;
-  border-radius: 40%;
+  font-size: 20px !important;
+  border-radius: 40% !important;
   padding-left:5%;
 }
 
 .education {
-  font-size: 20px;
-  border-radius: 40%;
-  padding-left:5%;
+  font-size: 20px !important;
+  border-radius: 40% !important;
+  padding-left:5% !important;
 }
 
 input {
-  width: 30%;
-  border-radius: 95px;
+  width: 30% !important;
+  border-radius: 95px !important;
 }
 
 #add-extact {
-  border-radius: 90px;
-  background: #e0e0e0;
-  padding: 5px;
-  width: 30%;
-  height: 4%;
+  border-radius: 90px !important;
+  background: #e0e0e0 !important;
+  padding: 5px !important;
+  width: 30% !important;
+  height: 4% !important;
 }
-
-.accordion {
-  background-color: white;
-  cursor: pointer;
-  padding-left: 2.5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color:  #e0e0e0;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  margin: 1%;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-  font-size: 18px;
-  border-radius: 1px;
-  border-style: ridge;
-}
-
 
 /* The Modal (background) */
 .modal {
