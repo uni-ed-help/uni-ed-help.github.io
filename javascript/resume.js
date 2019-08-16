@@ -3,7 +3,6 @@ function addExtra() {
   var role = document.getElementById("roleinput").value;
   var details = document.getElementById("extact-detailinput").value
   var list;
-  var divbutton = document.createElement("div");
   var button = document.createElement("button");
   var divpanel = document.createElement("div");
   var p = document.createElement("p");
@@ -12,26 +11,25 @@ function addExtra() {
     alert("You must write something!");
   }
   else {
-    button.appendChild(document.createTextNode(name));
-    button.classList.add("accordion");
-    p.appendChild(document.createTextNode(role));
-    p.appendChild(document.createTextNode(details));
-    divpanel.appendChild(p);
-    divpanel.classList.add("panel");
-    divbutton.appendChild(button);
-    divbutton.appendChild(divpanel);
     list = document.getElementById("extactlist");
-    list.appendChild(divbutton);
+    list.appendChild(button);
+    list.appendChild(divpanel);
   }
+  var span = document.createElement("span");
+  span.classList.add("close");
+  span.appendChild(document.createTextNode("\u00D7"));
+  button.appendChild(document.createTextNode("\u09F9\u00A0\u00A0"));
+  button.appendChild(document.createTextNode(name));
+  button.appendChild(span);
+  button.classList.add("accordion");
+  p.appendChild(document.createTextNode(role));
+  p.appendChild(document.createTextNode(details));
+  divpanel.appendChild(p);
+  divpanel.classList.add("panel");
 
   name = "";
   role = "";
   details = "";
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  divbutton.appendChild(span);
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
       var div = this.parentElement;
@@ -39,6 +37,7 @@ function addExtra() {
     }
   }
 }
+
 
 
 var myNodelist = document.getElementsByTagName("LI");
