@@ -1,11 +1,164 @@
 @import url(https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap);
 
+.programsinternsbackground{
+  background-color: #eff0f1;
+}
+.mentor h1 {
+  /* Text styles */
+  font-size: 4.5em;
+
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.mentor {
+  /* Sizing */
+  width: 100%;
+  height: 500px;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  background: linear-gradient(rgba(0, 0, 0, 0.43210),rgba(0, 0, 0, 0.43210)), url("https://cdnl.tblsft.com/sites/default/files/blog/headerimage_0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.mentor h1 {
+  /* Text styles */
+  font-size: 4.5em;
+
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.mentor {
+  /* Sizing */
+  width: 100%;
+  height: 500px;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  background: linear-gradient(rgba(0, 0, 0, 0.43210),rgba(0, 0, 0, 0.43210)), url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1069896383%2F960x0.jpg%3Ffit%3Dscale");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.hero h1 {
+  /* Text styles */
+  font-size: 4.5em;
+
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero {
+  /* Sizing */
+  width: 100%;
+  height: 500px;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("https://cdnl.tblsft.com/sites/default/files/blog/headerimage_0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 html {
   font-family: 'Darker Grotesque', sans-serif;
 }
-
+.menubackground{
+  background: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url("../images/testpic.jpg");
+}
 .buttonpadding {
   text-align: center;
+  background:#b3a4ca;
+  color:#fff;
+  border:none;
+  height:60px;
+  font-size:20px;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  width: 50%;
+  border-radius: 20px;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+  position: relative;
+}
+.buttonpadding:hover{
+  background:#fff;
+  border-radius: 0px;
+  color:#b3a4ca;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+}
+.buttonpadding:before,.buttonpadding:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #b3a4ca;
+  transition:400ms ease all;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+}
+.buttonpadding:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+}
+.buttonpadding:hover:before,.buttonpadding:hover:after{
+  width:100%;
+  transition:800ms ease all;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
 }
 
 .tableformat {
@@ -20,6 +173,7 @@ html {
   width: 90%;
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: bold;
+
 }
 
 .card-title{
@@ -39,7 +193,7 @@ html {
   border: 1px, grey;
   border-style: ridge;
   border-width: 60%;
-  background-color: #eff0f1;
+  background-color: black;
   padding: .75rem 1.25rem;
   border-radius: 12px;
   text-align: center;
@@ -75,28 +229,64 @@ h5 {
 }
 
 .btn {
-  display: inline-block;
-  background-color: ghostwhite;
-  padding: .375rem .75rem;
-  line-height: 1.5;
-  border-radius: .5rem;
-  width: 45%;
-  align: center;
+  text-align: center;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+  background:#b3a4ca;
+  color:#fff;
+  border:none;
+  height:60px;
+  font-size:20px;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  width: 50%;
+  border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 30px;
-  border: 5px, black;
+  position:relative;
+}
+.btn:hover{
+  background:#fff;
+  color:#b3a4ca;
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: thick;
   font-size: 20px;
 }
-.btn:hover{
-  background-color:#b3a4ca;
-  color:white;
+.btn:before,.btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #b3a4ca;
+  transition:400ms ease all;
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: thick;
+  font-size: 20px;
 }
+.btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+}
+.btn:hover:before,.btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: thick;
+  font-size: 20px;
+}
+
 tr, th, table {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -105,4 +295,5 @@ tr, th, table {
 h1 {
   text-align: center;
   font-size: 60px;
+  color: white;
 }

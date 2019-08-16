@@ -4,6 +4,10 @@ html {
   font-family: 'Darker Grotesque', sans-serif;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 .hero h1 {
   /* Text styles */
   font-size: 4.5em;
@@ -28,18 +32,11 @@ html {
   color: white;
 
   /* Background styles */
-  background: linear-gradient(rgba(0, 0, 0, 0.43210),rgba(0, 0, 0, 0.43210)), url("husky.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("../images/group-final-proj.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
 }
 
 .title {
@@ -50,4 +47,10 @@ html {
 table, td, tr {
   padding-left: 2.5%;
   padding-right: 2.5%;
+}
+
+p.ppadding {
+  font-size:24px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
 }

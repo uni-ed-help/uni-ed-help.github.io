@@ -7,7 +7,6 @@
     <title>Programs Menu | Uni(ED)Help</title>
 <!--
     <script type="text/javascript">
-
       if (screen.width <= 1000) {
         document.location = "faq-mobile.html";
       }
@@ -17,14 +16,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
 
-  <body>
+  <body class="menubackground">
     <div class="dropdown" style="font-size:18px">
       <button class="dropbtn">&#9776;</button>
       <div class="dropdown-content">
         <a href="index.html">Home</a>
-        <a href="programsmenu.html">Programs</a>
+        <a href="programsmenu.html" class="active">Programs</a>
         <a href="resume.html">Resume Builder</a>
-        <a href="faq.html" class="active">FAQ</a>
+        <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </div>
         &nbsp;&nbsp;Uni(ED)Help
@@ -32,11 +31,14 @@
     </div>
     <br>
     <h1>Programs Menu</h1>
-    <div class="buttonpadding">
-      <button class="btn btn-primary buttonpadding" onclick="window.location.href = 'programs.html'">Summer Programs</button>
-    </div>
-    <div class="buttonpadding">
-      <button class="btn btn-primary buttonpadding" onclick="window.location.href = 'internships.html'">Internships</button>
-    </div>
+    <center>
+      <button class="buttonpadding" onclick="window.location.href = 'programs.html'">Computer Science Programs</button>
+      <br>
+      <br>
+      <button class="buttonpadding" onclick="window.location.href = 'internships.html'">Internships and Mentorships</button>
+    </center>
+
+    <div style="padding-top:5%; position: absolute; top:90%; left: 50%; transform: translate(-50%, -50%); text-align:center; color:white">Copyright © 2019 Uni(ED)Help, Inc.</div>
+
   </body>
 </html>
