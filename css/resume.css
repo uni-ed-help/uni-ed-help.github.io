@@ -129,3 +129,10 @@ input:focus {
   text-decoration: none;
   cursor: pointer;
 }
+.submit {
+  margin-left: 250px;
+  width: 50%;
+}
+.submit:hover {
+  background-color: #f2f2f2;
+}
