@@ -51,3 +51,11 @@ button:hover, a:hover {
   padding-right: 50px;
 }
 
+a:active, a:link {
+  color: black;
+}
+
+a:link, a:visited {
+  color: black;
+}
+
