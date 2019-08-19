@@ -8,7 +8,7 @@ h1 {
 }
 
 body {
-  background-color: #fff9ff !important;
+  background-color: #f2f2f2 !important;
   font-family: 'Darker Grotesque', sans-serif !important;
 }
 
@@ -20,6 +20,8 @@ h2.header {
   border: 2px white !important;
   font-size: 32px !important;
   padding-left: 1% !important;
+  text-decoration: underline;
+  font-weight: lighter;
 }
 
 .geninfo {
@@ -41,10 +43,48 @@ h2.header {
 }
 
 input {
-  width: 40% !important;
-  border-radius: 95px !important;
+  width: 65%;
+  height: 50px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  transition: 5s;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input:focus {
+  border: 3px solid #555;
 }
 
+.cityboxposition {
+  width: 40%;
+  display: inline-block;
+}
+.zipcodebox {
+  width: 30%;
+}
+.phonenumberbox {
+  width: 60%;
+}
+.statebox {
+  display: inline-block;
+}
+#add-extact {
+  border-radius: 90px !important;
+  background: #e0e0e0 !important;
+  padding: 5px !important;
+  width: 30% !important;
+  height: 4% !important;
+}
+#theResume {
+  width: 70%;
+  margin-left: 150px;
+  height: 800px;
+  margin-bottom: 100px;
+  border: 8px solid #ccc;
+}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
