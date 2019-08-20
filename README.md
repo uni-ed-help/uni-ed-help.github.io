@@ -29,7 +29,7 @@ Our major challenges included:
 * Krystal McCook, Developer
 * Julianna Yu, Developer
 
-We would especially like to thank…
+We would especially like to thank...
 ...Our families and friends for encouraging us,
 ...Our mentors for helping us with our website throughout its creation,
 ...Girls Who Code for giving us the opportunity to join their sisterhood,
