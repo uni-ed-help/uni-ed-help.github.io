@@ -1,4 +1,4 @@
-# uni-ed-help.github.io
+# Uni(ED)Help
 Do you need help? Here's University &amp; Educational Help: the ultimate academic guide for teens
 
 **Mission Statement**
@@ -21,3 +21,6 @@ Our major challenges included:
 * Log-In Factor in combination with AI system: analyzes prior search history to make user experience more personalized.
 * Automate User-Questions: uses a database to add user-questions onto the FAQ page automatically.
 * Monetization: reaches out to sponsors and donors for monetary support and opportunities.
+
+**Citations**
+* [W3Schools](https://www.w3schools.com)
