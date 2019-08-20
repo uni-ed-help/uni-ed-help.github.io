@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
         <head>
@@ -60,15 +59,15 @@
                 <br>
                 <br>
                 <div class = "geninfo">
-                        Name: <input type = "text" name = "name">
+                        Name: <input type = "text" id = "name">
                         <br/>
                         <br/>
-                        Address: <input type = "text" name = "address">
+                        Address: <input type = "text" id = "address">
                         <br>
                         <br>
-                        City: <input type = "text" name = "city">
+                        City: <input type = "text" id = "city">
                         State:
-                        <select name = "address-state">
+                        <select id = "address-state">
                                 <option class = "state" value = "AL"> AL</option>
                                 <option class = "state" value = "AK"> AK</option>
                                 <option class = "state" value = "AR"> AR</option>
@@ -102,7 +101,7 @@
                                 <option class = "state" value = "NJ"> NJ</option>
                                 <option class = "state" value = "NM"> NM</option>
                                 <option class = "state" value = "NV"> NV</option>
-                                <option class = "state" value = "NY"> NY</option>
+                                <option class = "state" value = "NY" selected> NY</option>
                                 <option class = "state" value = "OH"> OH</option>
                                 <option class = "state" value = "OK"> OK</option>
                                 <option class = "state" value = "OT"> OR</option>
@@ -123,103 +122,134 @@
                         <br>
                         <br>
                         <div class="zipcodebox">
-                        Zip Code: <input type = "text" name = "zipcode">
+                        Zip Code: <input type = "text" id = "zipcode">
                         </div>
                         <br>
                         <div class="phonenumberbox">
-                        Phone Number: <input type = "tel" name = "phone">
+                        Phone Number: <input type = "tel" id = "phone">
                         <br>
                         <br>
-                        Email: <input type = "email" name = "email">
+                        Email: <input type = "email" id = "email">
                         </div>
                 </div>
                 <br>
                 <br>
                 <h2 class = "header"> Education </h2>
                 <div class = "education">
-                        High School: <input type="text" name = "highschool">
-                        <br>
-                        <br>
-                        Start Year: <input name = "hsstart" type = "number" max="3000" min="2000" step = "1" value = "2016" style= "width:20%">
-                        Graduating Year: <input name = "grad-year" type = "number" max = "3000" min = "2000" step = "1" value = "2020" style="width:20%">
-                        <br>
-                        <br>
-                        City: <input type = "text" name = "hscity" style="width:30%">
-                        <div class ="statebox">
-                        State:
-                        <select name = "hs-state">
-                                <option class = "state" value = "AL"> AL</option>
-                                <option class = "state" value = "AK"> AK</option>
-                                <option class = "state" value = "AR"> AR</option>
-                                <option class = "state" value = "AZ"> AZ</option>
-                                <option class = "state" value = "CA"> CA</option>
-                                <option class = "state" value = "CO"> CO</option>
-                                <option class = "state" value = "CT"> CT</option>
-                                <option class = "state" value = "DE"> DE</option>
-                                <option class = "state" value = "FL"> FL</option>
-                                <option class = "state" value = "GA"> GA</option>
-                                <option class = "state" value = "HI"> HI</option>
-                                <option class = "state" value = "ID"> ID</option>
-                                <option class = "state" value = "IL"> IL</option>
-                                <option class = "state" value = "IN"> IN</option>
-                                <option class = "state" value = "IA"> IA</option>
-                                <option class = "state" value = "KS"> KS</option>
-                                <option class = "state" value = "KY"> KY</option>
-                                <option class = "state" value = "LA"> LA</option>
-                                <option class = "state" value = "MA"> MA</option>
-                                <option class = "state" value = "MD"> MD</option>
-                                <option class = "state" value = "ME"> ME</option>
-                                <option class = "state" value = "MI"> MI</option>
-                                <option class = "state" value = "MN"> MN</option>
-                                <option class = "state" value = "MO"> MO</option>
-                                <option class = "state" value = "MS"> MS</option>
-                                <option class = "state" value = "MT"> MT</option>
-                                <option class = "state" value = "NC"> NC</option>
-                                <option class = "state" value = "ND"> ND</option>
-                                <option class = "state" value = "NE"> NE</option>
-                                <option class = "state" value = "NH"> NH</option>
-                                <option class = "state" value = "NJ"> NJ</option>
-                                <option class = "state" value = "NM"> NM</option>
-                                <option class = "state" value = "NV"> NV</option>
-                                <option class = "state" value = "NY"> NY</option>
-                                <option class = "state" value = "OH"> OH</option>
-                                <option class = "state" value = "OK"> OK</option>
-                                <option class = "state" value = "OT"> OR</option>
-                                <option class = "state" value = "PA"> PA</option>
-                                <option class = "state" value = "RI"> RI</option>
-                                <option class = "state" value = "SC"> SC</option>
-                                <option class = "state" value = "SD"> SD</option>
-                                <option class = "state" value = "TN"> TN</option>
-                                <option class = "state" value = "TX"> TX</option>
-                                <option class = "state" value = "UT"> UT</option>
-                                <option class = "state" value = "VA"> VA</option>
-                                <option class = "state" value = "VT"> VT</option>
-                                <option class = "state" value = "WA"> WA</option>
-                                <option class = "state" value = "WI"> WI</option>
-                                <option class = "state" value = "WV"> WV</option>
-                                <option class = "state" value = "WY"> WY</option>
+                    High School: <input type="text" id = "highschool">
+
+                    <br>
+                    <br>
+                    Start: <br>
+                    <select id = "schoolstartmonth">
+                        <option class = "month" value = "January">January</option>
+                        <option class = "month" value = "February">February</option>
+                        <option class = "month" value = "March">March</option>
+                        <option class = "month" value = "April">April</option>
+                        <option class = "month" value = "May">May</option>
+                        <option class = "month" value = "June">June</option>
+                        <option class = "month" value = "July">July</option>
+                        <option class = "month" value = "August">August</option>
+                        <option class = "month" value = "September" selected>September</option>
+                        <option class = "month" value = "October">October</option>
+                        <option class = "month" value = "November">November</option>
+                        <option class = "month" value = "December">December</option>
+                    </select>
+                    <input id = "hsstart" type = "number" max="3000" min="2000" step = "1" value = "2016" style= "width:20%">
+                    <br>
+                    Graduation: <br>    
+                    <select id = "schoolgradmonth">
+                        <option class = "month" value = "January">January</option>
+                        <option class = "month" value = "February">February</option>
+                        <option class = "month" value = "March">March</option>
+                        <option class = "month" value = "April">April</option>
+                        <option class = "month" value = "May">May</option>
+                        <option class = "month" value = "June" selected>June</option>
+                        <option class = "month" value = "July">July</option>
+                        <option class = "month" value = "August">August</option>
+                        <option class = "month" value = "September">September</option>
+                        <option class = "month" value = "October">October</option>
+                        <option class = "month" value = "November">November</option>
+                        <option class = "month" value = "December">December</option>
+                    </select>
+                    <input id = "grad-year" type = "number" max = "3000" min = "2000" step = "1" value = "2020" style="width:20%">
+                    <br>
+                    <br>
+                    City: <input type = "text" id = "hscity" style="width:30%">
+                    <div class ="statebox">
+                    State:
+                    <select id = "hs-state">
+                            <option class = "state" value = "AL"> AL</option>
+                            <option class = "state" value = "AK"> AK</option>
+                            <option class = "state" value = "AR"> AR</option>
+                            <option class = "state" value = "AZ"> AZ</option>
+                            <option class = "state" value = "CA"> CA</option>
+                            <option class = "state" value = "CO"> CO</option>
+                            <option class = "state" value = "CT"> CT</option>
+                            <option class = "state" value = "DE"> DE</option>
+                            <option class = "state" value = "FL"> FL</option>
+                            <option class = "state" value = "GA"> GA</option>
+                            <option class = "state" value = "HI"> HI</option>
+                            <option class = "state" value = "ID"> ID</option>
+                            <option class = "state" value = "IL"> IL</option>
+                            <option class = "state" value = "IN"> IN</option>
+                            <option class = "state" value = "IA"> IA</option>
+                            <option class = "state" value = "KS"> KS</option>
+                            <option class = "state" value = "KY"> KY</option>
+                            <option class = "state" value = "LA"> LA</option>
+                            <option class = "state" value = "MA"> MA</option>
+                            <option class = "state" value = "MD"> MD</option>
+                            <option class = "state" value = "ME"> ME</option>
+                            <option class = "state" value = "MI"> MI</option>
+                            <option class = "state" value = "MN"> MN</option>
+                            <option class = "state" value = "MO"> MO</option>
+                            <option class = "state" value = "MS"> MS</option>
+                            <option class = "state" value = "MT"> MT</option>
+                            <option class = "state" value = "NC"> NC</option>
+                            <option class = "state" value = "ND"> ND</option>
+                            <option class = "state" value = "NE"> NE</option>
+                            <option class = "state" value = "NH"> NH</option>
+                            <option class = "state" value = "NJ"> NJ</option>
+                            <option class = "state" value = "NM"> NM</option>
+                            <option class = "state" value = "NV"> NV</option>
+                            <option class = "state" value = "NY" selected> NY</option>
+                            <option class = "state" value = "OH"> OH</option>
+                            <option class = "state" value = "OK"> OK</option>
+                            <option class = "state" value = "OT"> OR</option>
+                            <option class = "state" value = "PA"> PA</option>
+                            <option class = "state" value = "RI"> RI</option>
+                            <option class = "state" value = "SC"> SC</option>
+                            <option class = "state" value = "SD"> SD</option>
+                            <option class = "state" value = "TN"> TN</option>
+                            <option class = "state" value = "TX"> TX</option>
+                            <option class = "state" value = "UT"> UT</option>
+                            <option class = "state" value = "VA"> VA</option>
+                            <option class = "state" value = "VT"> VT</option>
+                            <option class = "state" value = "WA"> WA</option>
+                            <option class = "state" value = "WI"> WI</option>
+                            <option class = "state" value = "WV"> WV</option>
+                            <option class = "state" value = "WY"> WY</option>
                         </select>
                         </div>
                         <br>
                         <br>
-                        GPA: <input type = "text" name = "gpa">
+                        GPA: <input type = "text" id = "gpa">
                         <br>
                         <br>
                         GPA scale:
-                        <select name = "gpascale">
-                                <option class = "gpa" value = "4.0"> 4.0 </option>
-                                <option class = "gpa" value = "100"> 100 </option>
+                        <select id = "gpascale">
+                            <option class = "gpa" value = "4.0"> 4.0 </option>
+                            <option class = "gpa" value = "100"> 100 </option>
                         </select>
                         <br>
                         <br>
                         Related Coursework:
 
                         <div id="CLASSES" class="classheader">
-                            <input type="text" id="classinput" placeholder="Title...">
-                            <span onclick='newform("classes")'>Add</span>
+                            <textarea style="width:75%; font-size: 20px;" id="classlist" placeholder="Courses..." ></textarea>
+                            <p class = "description tab">Format your courses the way you would like them to be displayed. <br>
+                            e.g. AP Computer Science | AP Calculus BC | AP Biology | AP United States History...</p>
                         </div>
-                        <ul id="classlist" name = "classlist">
-                        </ul>
                 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <h2 class = "header"> Extracurricular Activities </h2>
@@ -244,8 +274,6 @@
                             <!-- Modal body -->
                             <div class="modal-body">
                                 <form action="" method="post">
-
-
                                     Name of the Extracurricular Activity: 
                                         <br>
                                         <input type = "text" id="extactname" placeholder="Name...">
@@ -256,15 +284,15 @@
                                         <input type="text" id="roleinput" placeholder="Roles...">
                                         <br>
                                         <p class = "description tab">Member (2017-2018), Treasurer (2018-Present)</p>
-                                    Details: <br> <textarea style="width:75%; font-size: 20px; border-radius: 10px" id="extact-detailinput" placeholder="Details..."></textarea>
+                                    Details: <br> <textarea style="width:75%; font-size: 20px; border-radius: 10px" id="extact-detailinput" placeholder="Details..." ></textarea>
                                     <!-- <span onclick='newform("details")'>Add</span> -->
                                     <!-- <ul id="extact-detail" name = "extact-detail">
                                     </ul> -->
                                     <br>
                                         <p class="description tab">
-                                            - Coordinated club activities and taught members the skills needed to participate in competitions.<br> - Led the fundraising process at annual school functions.
+                                            • Coordinated club activities and taught members the skills needed to participate in competitions.<br> • Led the fundraising process at annual school functions.
                                     <br>
-                                    * Please format your details the way you would like them formatted on your resume (with '•' or '-')
+                                    * Please format your details with bullet points ('•' -- Alt + 8)
                                     </p>
                                     Start Date:
                                     <select id = "extact-startmonth">
@@ -338,17 +366,25 @@
                                 <form action="" method="post">
 
 
-                                    Name of the Special Program: <input type = "text" placeholder="Name...">
-                                    <br>
-                                    Location: <input type="text" id="roleinput" placeholder="Location...">
-                                    <br>
+                                    Name of the Special Program: <input type = "text" placeholder="Name..." id = "progname">
+                                    <p class="description tab">
+                                        Girls Who Code Summer Immersion Program
+                                    </p>
+                                    Location: <input type="text" id="progroleinput" placeholder="Location...">
+                                    <p class="description tab">
+                                        Goldman Sachs, New York, NY
+                                    </p>
                                     Details: <br> <textarea style="width:75%; font-size: 20px; border-radius: 10px" id="detailinput" placeholder="Details..."></textarea>
+                                    <p class="description tab">
+                                        • Enrolled in courses discussing various topics such as...
+                                        <br>
+                                        * Please format your details with bullet points ('•' -- Alt + 8)
+                                    </p>
                                         <!-- <span onclick='newform("details")'>Add</span> -->
                                     <!-- <ul id="extact-detail" name = "extact-detail">
                                     </ul> -->
-                                    <br>
                                     Start Date:
-                                    <select name = "extact-startmonth">
+                                    <select id = "progstartmonth">
                                         <option class = "month" value = "January">January</option>
                                         <option class = "month" value = "February">February</option>
                                         <option class = "month" value = "March">March</option>
@@ -362,11 +398,11 @@
                                         <option class = "month" value = "November">November</option>
                                         <option class = "month" value = "December">December</option>
                                     </select>
-                                    <input style="width: 20% !important;" name = "extact-startyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                                    <input style="width: 20% !important;" id = "progstartyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
                                     <br>
                                     End Date:
-                                    <input style="width: 5% !important;" type="checkbox" name="present" value="Present"> Present OR
-                                    <select style="width: 20% !important;" name = "extact-endmonth">
+                                    <input style="width: 5% !important;" type="checkbox" id="progpresent" value="Present"> Present OR
+                                    <select style="width: 20% !important;" id = "progendmonth">
                                         <option class = "month" value = "January">January</option>
                                         <option class = "month" value = "February">February</option>
                                         <option class = "month" value = "March">March</option>
@@ -380,7 +416,7 @@
                                         <option class = "month" value = "November">November</option>
                                         <option class = "month" value = "December">December</option>
                                     </select>
-                                    <input style="width: 20% !important;" name = "extact-endyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                                    <input style="width: 20% !important;" id = "progendyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
                                 </form>
                             </div>
                             <!-- Modal footer -->
@@ -392,8 +428,8 @@
                     </div>
                 </div>
                 <br>
-                <ul id="proglist" name = "proglist">
-                </ul>
+                <div id="proglist" name = "proglist">
+                </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <h2 class = "header"> Honors and Awards </h2>
                 <br>
@@ -417,10 +453,12 @@
                             <!-- Modal body -->
                             <div class="modal-body">
                                 <form action="" method="post">
-                                    Name of the Honor/Award: <input type = "text" placeholder="Name...">
-                                    <br>
+                                    Name of the Honor/Award: <input type = "text" placeholder="Name..." id = "honorname">
+                                    <p class = "description tab">
+                                        National Honor Society (High School)
+                                    </p>
                                     Date:
-                                    <select name = "extact-month">
+                                    <select id = "honormonth">
                                         <option class = "month" value = "January">January</option>
                                         <option class = "month" value = "February">February</option>
                                         <option class = "month" value = "March">March</option>
@@ -434,7 +472,7 @@
                                         <option class = "month" value = "November">November</option>
                                         <option class = "month" value = "December">December</option>
                                     </select>
-                                    <input style="width: 20% !important;" name = "extact-year" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                                    <input style="width: 20% !important;" id = "honoryear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
                                 </form>
                             </div>
                             <!-- Modal footer -->
@@ -446,8 +484,8 @@
                     </div>
                 </div>
                 <br>
-                <ul id="honorlist" name = "honorlist">
-                </ul>
+                <div id="honorlist" name = "honorlist">
+                </div>
 
 
                 <script>
@@ -950,4 +988,4 @@
         <iframe id="theResume" src="about:blank"/>
     </body>
 </html>
->>>>>>> 8644c7b0297f8e3019824ec09b1f9aa6b23eaebe
+
