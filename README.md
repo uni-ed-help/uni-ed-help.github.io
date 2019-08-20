@@ -1,4 +1,4 @@
-# [Uni(ED)Help](uni-ed-help.github.io)
+# [Uni(ED)Help](https://uni-ed-help.github.io)
 Do you need help? Here's University &amp; Educational Help: the ultimate academic guide for teens
 
 **Mission Statement**
