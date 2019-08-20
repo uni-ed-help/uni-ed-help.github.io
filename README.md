@@ -22,5 +22,19 @@ Our major challenges included:
 * Automate User-Questions: uses a database to add user-questions onto the FAQ page automatically.
 * Monetization: reaches out to sponsors and donors for monetary support and opportunities.
 
+**Acknowledgements**
+* Sarah Fida, Developer
+* Camellia Guan, Developer
+* Shelly Masih, Developer
+* Krystal McCook, Developer
+* Julianna Yu, Developer
+
+We would especially like to thank…
+...Our families and friends for encouraging us,
+...Our mentors for helping us with our website throughout its creation,
+...Girls Who Code for giving us the opportunity to join their sisterhood,
+...Goldman Sachs for hosting our Summer Immersion Program
+
+
 **Citations**
 * [W3Schools](https://www.w3schools.com)
