@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
         <head>
                 <link rel="stylesheet" href="css/dropdown.css">
@@ -131,7 +131,7 @@
                     </select>
                     <input id = "hsstart" type = "number" max="3000" min="2000" step = "1" value = "2016" style= "width:20%">
                     <br>
-                    Graduation: <br>    
+                    Graduation: <br>
                     <select id = "schoolgradmonth">
                         <option class = "month" value = "January">January</option>
                         <option class = "month" value = "February">February</option>
@@ -248,12 +248,12 @@
                             <!-- Modal body -->
                             <div class="modal-body">
                                 <form action="" method="post">
-                                    Name of the Extracurricular Activity: 
+                                    Name of the Extracurricular Activity:
                                         <br>
                                         <input type = "text" id="extactname" placeholder="Name...">
                                         <br>
                                         <p class = "description tab">Science Olympiad, Model UN, etc.</p>
-                                    Role: 
+                                    Role:
                                         <br>
                                         <input type="text" id="roleinput" placeholder="Roles...">
                                         <br>
@@ -487,8 +487,8 @@
                 <div class = "iframe-container" align = "center"><iframe id="theResume" src="about:blank" align = "center" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px';" scrolling="no"/><div>
                 <br>
                 <br>
-        
-                
+
+
         </body>
 </html>
 =======
@@ -824,7 +824,7 @@
                 <form action="" method="post">
 
 
-                  Name of the Special Program: <input type = "text" placeholder="Name...">
+                  Name of the Special Program: <input type = "text" id="progname" placeholder="Name...">
                   <br>
                   Location: <input type="text" id="roleinput" placeholder="Location...">
                   <br>
@@ -935,10 +935,197 @@
         <ul id="honorlist" name = "honorlist">
         </ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <h2 class = "header"> Volunteer Experience </h2>
+        <br>
+        <!-- Button to Open the Modal -->
+        <div style="padding-left:1%">
+            <button style="background-color:#d6d6d6 !important; color:black !important;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#extra">
+                Add Volunteer Experience
+            </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="extra">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Volunteer Experience</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            Name of the Volunteer Experience:
+                                <br>
+                                <input type = "text" id="volunteername" placeholder="Name...">
+                                <br>
+                                <p class = "description tab">Science Olympiad, Model UN, etc.</p>
+                            Role:
+                                <br>
+                                <input type="text" id="roleinput" placeholder="Roles...">
+                                <br>
+                                <p class = "description tab">Volunteer, Intern, Tutor</p>
+                            Details: <br> <textarea style="width:75%; font-size: 20px; border-radius: 10px" id="volunteer-detailinput" placeholder="Details..." ></textarea>
+                            <!-- <span onclick='newform("details")'>Add</span> -->
+                            <!-- <ul id="extact-detail" name = "extact-detail">
+                            </ul> -->
+                            <br>
+                                <p class="description tab">
+                                    • Coordinated club activities and taught members the skills needed to participate in competitions.<br> • Led the fundraising process at annual school functions.
+                            <br>
+                            * Please format your details with bullet points ('•' -- Alt + 8)
+                            </p>
+                            Start Date:
+                            <select id = "extact-startmonth">
+                                <option class = "month" value = "January">January</option>
+                                <option class = "month" value = "February">February</option>
+                                <option class = "month" value = "March">March</option>
+                                <option class = "month" value = "April">April</option>
+                                <option class = "month" value = "May">May</option>
+                                <option class = "month" value = "June">June</option>
+                                <option class = "month" value = "July">July</option>
+                                <option class = "month" value = "August">August</option>
+                                <option class = "month" value = "September">September</option>
+                                <option class = "month" value = "October">October</option>
+                                <option class = "month" value = "November">November</option>
+                                <option class = "month" value = "December">December</option>
+                            </select>
+                            <input style="width: 20% !important;" id = "extact-startyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                            <br>
+                            End Date:
+                            <input style="width: 5% !important;" type="checkbox" id="extact-present" value="Present"> Present OR
+                            <select style="width: 20% !important;" id = "extact-endmonth">
+                                <option class = "month" value = "January">January</option>
+                                <option class = "month" value = "February">February</option>
+                                <option class = "month" value = "March">March</option>
+                                <option class = "month" value = "April">April</option>
+                                <option class = "month" value = "May">May</option>
+                                <option class = "month" value = "June">June</option>
+                                <option class = "month" value = "July">July</option>
+                                <option class = "month" value = "August">August</option>
+                                <option class = "month" value = "September">September</option>
+                                <option class = "month" value = "October">October</option>
+                                <option class = "month" value = "November">November</option>
+                                <option class = "month" value = "December">December</option>
+                            </select>
+                            <input style="width: 20% !important;" id= "extact-endyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn" onclick="addVolunteer()">Add</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="volunteerlist" name = "volunteerlist">
+        </div>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <h2 class = "header"> Work Experience </h2>
+        <br>
+        <!-- Button to Open the Modal -->
+        <div style="padding-left:1%">
+            <button style="background-color:#d6d6d6 !important; color:black !important;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#extra">
+                Add Work Experience
+            </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="extra">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Work Experience</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            Name of the Work Experience:
+                                <br>
+                                <input type = "text" id="workname" placeholder="Name...">
+                                <br>
+                                <p class = "description tab">Science Olympiad, Model UN, etc.</p>
+                            Role:
+                                <br>
+                                <input type="text" id="roleinput" placeholder="Roles...">
+                                <br>
+                                <p class = "description tab">Volunteer, Intern, Tutor</p>
+                            Details: <br> <textarea style="width:75%; font-size: 20px; border-radius: 10px" id="volunteer-detailinput" placeholder="Details..." ></textarea>
+                            <!-- <span onclick='newform("details")'>Add</span> -->
+                            <!-- <ul id="extact-detail" name = "extact-detail">
+                            </ul> -->
+                            <br>
+                                <p class="description tab">
+                                    • Coordinated club activities and taught members the skills needed to participate in competitions.<br> • Led the fundraising process at annual school functions.
+                            <br>
+                            * Please format your details with bullet points ('•' -- Alt + 8)
+                            </p>
+                            Start Date:
+                            <select id = "extact-startmonth">
+                                <option class = "month" value = "January">January</option>
+                                <option class = "month" value = "February">February</option>
+                                <option class = "month" value = "March">March</option>
+                                <option class = "month" value = "April">April</option>
+                                <option class = "month" value = "May">May</option>
+                                <option class = "month" value = "June">June</option>
+                                <option class = "month" value = "July">July</option>
+                                <option class = "month" value = "August">August</option>
+                                <option class = "month" value = "September">September</option>
+                                <option class = "month" value = "October">October</option>
+                                <option class = "month" value = "November">November</option>
+                                <option class = "month" value = "December">December</option>
+                            </select>
+                            <input style="width: 20% !important;" id = "extact-startyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                            <br>
+                            End Date:
+                            <input style="width: 5% !important;" type="checkbox" id="extact-present" value="Present"> Present OR
+                            <select style="width: 20% !important;" id = "extact-endmonth">
+                                <option class = "month" value = "January">January</option>
+                                <option class = "month" value = "February">February</option>
+                                <option class = "month" value = "March">March</option>
+                                <option class = "month" value = "April">April</option>
+                                <option class = "month" value = "May">May</option>
+                                <option class = "month" value = "June">June</option>
+                                <option class = "month" value = "July">July</option>
+                                <option class = "month" value = "August">August</option>
+                                <option class = "month" value = "September">September</option>
+                                <option class = "month" value = "October">October</option>
+                                <option class = "month" value = "November">November</option>
+                                <option class = "month" value = "December">December</option>
+                            </select>
+                            <input style="width: 20% !important;" id= "extact-endyear" type = "number" max = "3000" min = "2000" step = "1" value = "2019">
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn" onclick="addWork()">Add</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="worklist" name = "worklist">
+        </div>
+
+
+
+
+
         <input class = "submit" type = "submit" value = "see your resume!" onclick = "makeResume()" name = "pushit">
         <br>
         <br>
         <iframe id="theResume" src="about:blank"/>
     </body>
 </html>
-
